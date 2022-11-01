@@ -1,0 +1,30 @@
+<mat-form-field>
+  <input matInput [matDatepicker]="dp" placeholder="Moment.js datepicker" [formControl]="date">
+  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field dateFormat1>
+  <input matInput [matDatepicker]="dp2" placeholder="Moment.js datepicker" [formControl]="date">
+  <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+  <mat-datepicker #dp2></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field dateFormat2>
+  <input matInput [matDatepicker]="dp3" placeholder="Moment.js datepicker" [formControl]="date">
+  <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+  <mat-datepicker #dp3></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field dateFormat2>
+  <input matInput [(ngModel)]="date2" [matDatepicker]="dp4" placeholder="Moment.js datepicker" >
+  <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+  <mat-datepicker #dp4></mat-datepicker>
+</mat-form-field>
+
+<button (click)="log()">BOTON</button>
+
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
